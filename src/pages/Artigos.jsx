@@ -11,7 +11,7 @@ export function Artigos() {
             <div className=" flex justify-center pt-5">
                 <h1 className=" text-[35px] text-black text-3xl font-bold mb-4">Artigos Relevantes</h1>
             </div>
-            <main className="flex bg-center px-12  flex justify-between items-start pt-12 gap-30 mb-10">
+            <main className="flex bg-center px-12  flex justify-between items-start pt-12 gap-30 mb-25">
                 <div>
                     <img src={foto1} alt="" className="h-60 rounded-3xl" />
                     <p className="pt-15 font-semibold text-[15px] text-center">Modelagem da biomassa de plantações florestais a partir da tecnologia LiDAR embarcada em drone</p>

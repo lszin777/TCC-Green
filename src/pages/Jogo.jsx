@@ -50,7 +50,7 @@ export function Jogo() {
             <h3 className="text-xl font-extrabold text-gray-900 mt-4">
               Embarque nessa Aventura!
             </h3>
-            <button className="mt-4 bg-green-700 text-white px-6 py-2 rounded-full font-bold hover:bg-green-800 transition">
+            <button className="mt-4 bg-green text-black px-6 py-2 rounded-full font-bold hover:bg-green-800 transition">
               Jogar
             </button>
           </div>

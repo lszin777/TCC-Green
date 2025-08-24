@@ -6,10 +6,10 @@ import sensorHumi from "../assets/sensorHumi.png";
 import display from "../assets/display.png";
 
 const itens = [
-  { nome: "Arduino uno", preco: 79.9, tipo: "Placa", img: {arduino} },
-  { nome: "Sensor de umidade", preco: 59.9, tipo: "Sensor", img: {sensorHumi} },
-  { nome: "Sensor de temperatura", preco: 29.9, tipo: "Sensor", img: {sensorTemp} },
-  { nome: "Display lcd", preco: 69.9, tipo: "Tela", img: {display} },
+  { nome: "Arduino uno", preco: 79.9, tipo: "Placa", img: arduino },
+  { nome: "Sensor de umidade", preco: 59.9, tipo: "Sensor", img: sensorHumi },
+  { nome: "Sensor de temperatura", preco: 29.9, tipo: "Sensor", img: sensorTemp },
+  { nome: "Display lcd", preco: 69.9, tipo: "Tela", img: display },
 ];
 
 export function Itens() {
@@ -21,6 +21,7 @@ export function Itens() {
                 <h1 className=" text-[35px] text-black text-3xl font-bold mb-4">Gerenciar Itens</h1>
             </div>
       {/* Conteúdo */}
+      
       <main className="container mx-auto py-8">
         {/* Cabeçalho da tabela */}
         <div className="grid grid-cols-3 font-semibold text-lg mb-6 px-6">
