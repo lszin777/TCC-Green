@@ -8,79 +8,84 @@ import Inseto1 from "../assets/largata.png";
 import Inseto2 from "../assets/pulga.png";
 import Inseto3 from "../assets/mosca.png";
 
-import { Switch } from "../components/Switch"
+import { Switch } from "../components/Switch";
 import Logo from "../assets/logo.svg";
 
 export function Home() {
   return (
     <div>
       <div className="w-full min-h-screen">
-
         {/* Header */}
         <header
           className="w-full h-[100vh] bg-cover "
           style={{ backgroundImage: `url(${Homeimgheader})` }}
-          
         >
-        
-         
-        <div className="absolute inset-0 bg-black/50 z-0"></div>
+          <div className="absolute inset-0 bg-black/50 z-0"></div>
 
-        
-        <section className="relative z-10 bg-cover bg-center px-12 flex justify-between items-start pt-8">
-          <a href="/home">
-            <img src={Logo} alt="Logo" className="h-35 w-auto " />
-          </a>
+          <section className="relative z-10 bg-cover bg-center px-12 flex justify-between items-start pt-8">
+            <a href="/home">
+              <img src={Logo} alt="Logo" className="h-20 w-auto " />
+            </a>
 
-          <nav className="text-white flex space-x-4 bg-white/20 backdrop-blur-md p-2 px-6 rounded-full border-2">
-            <ul className="flex gap-20">
-              <li>
-                <a href="/somosnos" className="font-semibold text-[19px]">Somos nós</a>
-              </li>
-              <li>
-                <a href="/artigos" className="font-semibold text-[19px]">Artigos</a>
-              </li>
-              <li>
-                <a href="/itens" className="font-semibold text-[19px]">Itens</a>
-              </li>
-            </ul>
-          </nav>
+            <nav className="text-white flex space-x-4 bg-white/20 backdrop-blur-md p-2 px-6 rounded-full border-2">
+              <ul className="flex gap-20">
+                <li>
+                  <a href="/somosnos" className="font-semibold text-[19px]">
+                    Somos nós
+                  </a>
+                </li>
+                <li>
+                  <a href="/artigos" className="font-semibold text-[19px]">
+                    Artigos
+                  </a>
+                </li>
+                <li>
+                  <a href="/itens" className="font-semibold text-[19px]">
+                    Itens
+                  </a>
+                </li>
+              </ul>
+            </nav>
 
-          <div className="flex">
-            <Switch />
-            <div className="ps-8"></div>
-            <button className="text-white px-6 py-3 rounded-full font-semibold shadow border-2 bg-transparent">
-              <a href="/detalhes">Perfil</a>
-            </button>
+            <div className="flex">
+              <Switch />
+              <div className="ps-8"></div>
+              <button className="text-white px-6 py-3 rounded-full font-semibold shadow border-2 bg-transparent">
+                <a href="/detalhes">Perfil</a>
+              </button>
+            </div>
+          </section>
+
+          <div className="relative z-10 text-center text-white flex flex-col items-center justify-center h-screen -translate-y-15 ">
+            <h2 className="text-green-600 text-4xl md:text-5xl font-bold">
+              Bem-vindo
+            </h2>
+            <h1 className="text-5xl md:text-6xl font-extrabold">
+              Green Guardian
+            </h1>
+            <p className="mt-4 text-lg max-w-2xl mx-auto">
+              Este site reúne os principais conteúdos do Trabalho de Conclusão de
+              Curso voltado à conservação e manejo sustentável do solo.
+            </p>
+
+            <div className="mt-6 flex gap-4 justify-center">
+              <button className="px-6 py-2 rounded-lg bg-green-600 text-white font-semibold hover:bg-green-700 transition">
+                Download
+              </button>
+              <button className="px-6 py-2 rounded-lg border border-white text-white font-semibold hover:bg-white hover:text-black transition">
+                <a href="/jogo">Jogo</a>
+              </button>
+            </div>
           </div>
-        </section>
+        </header> 
 
-        <div className="relative z-10 text-center text-white px-4">
-          <h2 className="text-green-600 text-4xl md:text-5xl font-bold">Bem-vindo</h2>
-          <h1 className="text-5xl md:text-6xl font-extrabold">Green Guardian</h1>
-          <p className="mt-4 text-lg max-w-2xl mx-auto">
-            Este site reúne os principais conteúdos do Trabalho de Conclusão de
-            Curso voltado à conservação e manejo sustentável do solo.
-          </p>
-
-          <div className="mt-6 flex gap-4 justify-center">
-            <button className="px-6 py-2 rounded-lg bg-green-600 text-white font-semibold hover:bg-green-700 transition">
-              Download
-            </button>
-            <button className="px-6 py-2 rounded-lg border border-white text-white font-semibold hover:bg-white hover:text-black transition">
-              <a href="/jogo">Jogo</a>
-            </button>
-          </div>
-        </div>
-        </header>
-
-        
-        <section className="py-16 px-6 md:px-20 bg-white">
-          <h2 className="text-3xl md:text-4xl font-bold">
+        {/* Passo a Passo */}
+        <section className="py-16 px-6 md:px-20 bg-white dark:bg-[rgba(38,64,22,1)]">
+          <h2 className="text-3xl md:text-4xl font-bold  dark:text-white">
             Green Guardian{" "}
             <span className="text-green-600">Passo a Passo</span>
           </h2>
-          <p className="mt-4 text-gray-600 max-w-3xl">
+          <p className="mt-4 text-gray-600 max-w-3xl  dark:text-white">
             Este guia apresenta o passo a passo do projeto com objetivo de estudar
             e aplicar técnicas que recuperem áreas degradadas, promovendo a
             restauração da qualidade do solo e a sustentabilidade ambiental.
@@ -124,32 +129,32 @@ export function Home() {
           </div>
         </section>
 
-        
-        <section className="py-16 px-6 md:px-20 bg-gray-100 text-center">
-          <h2 className="text-3xl md:text-4xl font-bold">
+        {/* Vídeos */}
+        <section className="py-16 px-6 md:px-20 bg-gray-100 text-center dark:bg-[rgba(50,64,41,1)]">
+          <h2 className="text-3xl md:text-4xl font-bold dark:text-white">
             Video demonstrativo do{" "}
             <span className="text-green-600">Green Guardian</span>
           </h2>
-          <p className="mt-4 text-gray-600 max-w-3xl mx-auto">
+          <p className="mt-4 text-gray-600 max-w-3xl mx-auto dark:text-white">
             Nesta seção, disponibilizamos um vídeo explicativo que resume os
             principais pontos do Trabalho de Conclusão de Curso sobre o cuidado com
             o solo. O material visual reforça a importância da preservação do solo.
           </p>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-10">
-            <img src={VideoThumb1} alt="Vídeo 1" className="rounded-2xl shadow" />
-            <img src={VideoThumb2} alt="Vídeo 2" className="rounded-2xl shadow" />
-            <img src={VideoThumb3} alt="Vídeo 3" className="rounded-2xl shadow" />
+            <img src={VideoThumb1} alt="Vídeo 1" className="rounded-2xl " />
+            <img src={VideoThumb2} alt="Vídeo 2" className="rounded-2xl " />
+            <img src={VideoThumb3} alt="Vídeo 3" className="rounded-2xl " />
           </div>
         </section>
 
-        
-        <section className="py-16 px-6 md:px-20 bg-white text-center">
-          <h2 className="text-3xl md:text-4xl font-bold">
+        {/* Insetos */}
+        <section className="py-16 px-6 md:px-20 bg-white text-center dark:bg-[rgba(38,64,22,1)]">
+          <h2 className="text-3xl md:text-4xl font-bold  dark:text-white">
             Entre Asas e Antenas:{" "}
             <span className="text-green-600">Mundo dos Insetos</span>
           </h2>
-          <p className="mt-4 text-gray-600 max-w-3xl mx-auto">
+          <p className="mt-4 text-gray-600 max-w-3xl mx-auto  dark:text-white">
             Insetos são essenciais para o equilíbrio dos ecossistemas,
             desempenhando funções fundamentais na polinização, decomposição e
             controle biológico, mas também podem causar grandes danos à saúde e à
@@ -158,15 +163,23 @@ export function Home() {
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-10">
             <div className="bg-gray-100 p-6 rounded-2xl shadow">
-              <img src={Inseto1} alt="Lagartas" className="rounded-xl mb-4" />
+              <img
+                src={Inseto1}
+                alt="Lagartas"
+                className="rounded-xl mb-4 mx-auto block"
+              />
               <h3 className="font-bold text-lg text-green-600">Lagartas</h3>
-              <p className="text-gray-600 text-sm mt-2">
+              <p className="text-gray-600 text-sm mt-2 ">
                 Velozes lagartas que atacam plantações, consumindo folhas e
                 prejudicando a produtividade agrícola.
               </p>
             </div>
             <div className="bg-gray-100 p-6 rounded-2xl shadow">
-              <img src={Inseto2} alt="Pulgões" className="rounded-xl mb-4" />
+              <img
+                src={Inseto2}
+                alt="Pulgões"
+                className="rounded-xl mb-4 mx-auto block"
+              />
               <h3 className="font-bold text-lg text-green-600">Pulgões</h3>
               <p className="text-gray-600 text-sm mt-2">
                 Os pulgões sugam a seiva das plantas, causando enfraquecimento,
@@ -174,7 +187,11 @@ export function Home() {
               </p>
             </div>
             <div className="bg-gray-100 p-6 rounded-2xl shadow">
-              <img src={Inseto3} alt="Mosca-branca" className="rounded-xl mb-4" />
+              <img
+                src={Inseto3}
+                alt="Mosca-branca"
+                className="rounded-xl mb-4 mx-auto block"
+              />
               <h3 className="font-bold text-lg text-green-600">Mosca-branca</h3>
               <p className="text-gray-600 text-sm mt-2">
                 A mosca-branca provoca sérios danos em hortaliças e plantas
@@ -184,7 +201,7 @@ export function Home() {
           </div>
         </section>
 
-        
+        {/* Call to action */}
         <section className="py-16 px-6 md:px-20 bg-green-600 text-center text-white">
           <h2 className="text-3xl md:text-4xl font-bold">
             Cuide do Meio Ambiente, <br /> Cuide do Futuro
@@ -198,14 +215,12 @@ export function Home() {
               Download
             </button>
             <button className="px-6 py-2 rounded-lg border border-white text-white font-semibold hover:bg-white hover:text-green-600 transition">
-              <a href="/jogo">
-                Jogo
-              </a>
+              <a href="/jogo">Jogo</a>
             </button>
           </div>
         </section>
 
-        
+        {/* Footer */}
         <footer className="bg-black text-white py-10 px-6 md:px-20 grid grid-cols-1 md:grid-cols-3 gap-6 text-center md:text-left">
           <div>
             <p className="font-bold">📞 Contato</p>

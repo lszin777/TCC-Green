@@ -4,9 +4,9 @@ import logo from "../assets/logo.svg"
 
 export  function Detalhes() {
   return (
-    <div className="flex min-h-screen bg-gray-100">
+    <div className="flex min-h-screen bg-gray-100 ">
      
-      <div className="w-16 bg-green-700">
+      <div className="w-16 bg-green-700 ">
         <a href="/home">
         <img src={logo} alt="" className="pt-4" />
         </a>
@@ -16,18 +16,18 @@ export  function Detalhes() {
       
       <div className="flex-1">
         {/* Header */}
-        <header className="flex flex-col w-full bg-white shadow">
+        <header className="flex flex-col w-full bg-white shadow dark:bg-[rgba(38,64,22,1)] ">
           <div className="flex items-center justify-between px-6 py-4">
             <div>
-              <h1 className="text-2xl font-bold">Bem-Vindo, João</h1>
-              <p className="text-sm text-gray-500">Terça, 07 JUNHO 2025</p>
+              <h1 className="text-2xl font-bold dark:text-white ">Bem-Vindo, João</h1>
+              <p className="text-sm text-gray-500 ">Terça, 07 JUNHO 2025</p>
             </div>
 
-            <div className="flex items-center gap-4">
+            <div className="flex items-center gap-4  ">
               <input
                 type="text"
                 placeholder="Search"
-                className="w-64 px-4 py-2 text-sm rounded-full border border-gray-300 focus:outline-none focus:ring-2 focus:ring-green-500"
+                className="w-64 px-4 py-2 text-sm rounded-full border border-gray-300 focus:outline-none focus:ring-2 focus:ring-green-500 dark:text-white"
               />
               
               <svg
@@ -60,7 +60,7 @@ export  function Detalhes() {
         </header>
 
         
-        <main className="p-6">
+        <main className="p-6 dark:bg-[rgba(38,64,22,1)]">
           <div className="bg-white p-6 rounded-2xl shadow-md max-w-4xl mx-auto">
             
             <div className="flex items-center gap-4 mb-6">

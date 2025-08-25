@@ -7,12 +7,12 @@ import anderson from "../assets/anderson.jpg";
 
 export function SomosNos() {
   return (
-    <section className="px-8 py-12 pt-20">
+    <section className="px-8 py-12 pt-20 dark:bg-[rgba(38,64,22,1)]">
       {/* Título e descrição */}
       <div className="flex justify-between items-start">
         <div>
-          <h2 className="text-3xl font-bold mb-4">QUEM SOMOS NÓS</h2>
-          <p className="text-gray-700 max-w-2xl mb-8 pt-7">
+          <h2 className="text-3xl font-bold mb-4 dark:text-white">QUEM SOMOS NÓS</h2>
+          <p className="text-gray-700 max-w-2xl mb-8 pt-7 dark:text-white">
             Somos um grupo comprometido e apaixonado pelo tema do nosso TCC.
             Unimos diferentes habilidades e conhecimentos para desenvolver um
             trabalho de qualidade.
@@ -21,11 +21,11 @@ export function SomosNos() {
 
         {/* Botão Voltar */}
         <div className="flex justify-center space-x-4 mt-12">
-          <button className="flex items-center justify-between bg-[rgb(217,217,217)] w-32 px-4 py-2 rounded-md">
+          <button className="flex items-center justify-between bg-[rgb(217,217,217)] w-32 px-4 py-2 rounded-md  dark:bg-[rgba(84,140,49,1)]">
             <a href="/home" className="flex-1 text-left">
-              <span className="text-black font-semibold">Voltar</span>
+              <span className="text-black font-semibold dark:text-white">Voltar</span>
             </a>
-            <span className="text-black font-semibold">→</span>
+            <span className="text-black font-semibold dark:text-white">→</span>
           </button>
         </div>
       </div>

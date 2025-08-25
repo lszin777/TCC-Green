@@ -16,26 +16,28 @@ export function Itens() {
   const valorTotal = itens.reduce((acc, item) => acc + item.preco, 0);
 
   return (
-    <div className="min-h-screen bg-gray-100">
-        <div className=" flex justify-center pt-5">
-                <h1 className=" text-[35px] text-black text-3xl font-bold mb-4">Gerenciar Itens</h1>
-            </div>
+    <div className="min-h-screen bg-gray-100 dark:bg-[rgba(38,64,22,1)]">
+      <div className="flex justify-center pt-5">
+        <h1 className="text-[35px] text-black text-3xl font-bold mb-4 dark:text-white">
+          Gerenciar Itens
+        </h1>
+      </div>
+
       {/* Conteúdo */}
-      
       <main className="container mx-auto py-8">
         {/* Cabeçalho da tabela */}
-        <div className="grid grid-cols-3 font-semibold text-lg mb-6 px-6">
+        <div className="grid grid-cols-3 font-semibold text-lg mb-6 px-6 dark:text-white">
           <span>Itens cadastrados</span>
           <span className="text-center">Ordenar</span>
           <span className="text-right">Filtrar</span>
         </div>
 
         {/* Lista de itens */}
-        <div className="space-y-4">
+        <div className="space-y-4 ">
           {itens.map((item, i) => (
             <div
               key={i}
-              className="bg-white shadow-md rounded-xl flex items-center justify-between px-6 py-4"
+              className="bg-white shadow-md rounded-xl grid grid-cols-3 items-center px-6 py-4"
             >
               {/* Coluna item */}
               <div className="flex items-center gap-4">
@@ -47,21 +49,28 @@ export function Itens() {
                 <span className="text-lg">{item.nome}</span>
               </div>
 
-              {/* Coluna preço */}
-              <div className="font-bold text-lg">{item.preco.toFixed(2)}</div>
+              {/* Coluna preço (alinhado com "Ordenar") */}
+              <div className="text-center font-bold text-lg">
+                {item.preco.toFixed(2)}
+              </div>
 
-              {/* Coluna tipo */}
-              <span className="bg-green-600 text-white text-sm rounded-full px-4 py-1">
-                {item.tipo}
-              </span>
+              {/* Coluna tipo (alinhado com "Filtrar") */}
+              <div className="text-right">
+                <span className="bg-green-600 text-white text-sm rounded-full px-4 py-1">
+                  {item.tipo}
+                </span>
+              </div>
             </div>
           ))}
         </div>
 
-        {/* Valor total */}
-        <div className="flex justify-end items-center mt-8 px-6 font-semibold text-lg">
-          <span className="mr-4">Valor total</span>
-          <span>{valorTotal.toFixed(2)}</span>
+        {/* Valor total (alinhado embaixo de Ordenar) */}
+        <div className="grid grid-cols-3 items-center mt-8 px-6 font-semibold text-lg dark:text-white">
+          <div></div>
+          <div className="text-center ">
+            Valor total: {valorTotal.toFixed(2)}
+          </div>
+          <div></div>
         </div>
       </main>
     </div>

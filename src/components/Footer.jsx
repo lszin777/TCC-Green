@@ -1,8 +1,6 @@
-import "./Footer.css"
-
 export function Footer() {
     return (
-        <footer className="bg-black text-white py-10 px-6 md:px-20 grid grid-cols-1 md:grid-cols-3 gap-45 text-center md:text-left">
+        <footer className="bg-black text-white py-10 px-6 md:px-30 grid grid-cols-1 md:grid-cols-3 gap-45 text-center md:text-left">
         <div>
           <p className="font-bold">📞 Contato</p>
           <p className="text-gray-400">+55 (61) 99999-9999</p>
