@@ -1,10 +1,11 @@
 import React from "react";
 import joao from "../assets/joao.jpg";
 import logo from "../assets/logo.svg"
+import { Switch } from "../components/Switch";
 
 export  function Detalhes() {
   return (
-    <div className="flex min-h-screen bg-gray-100 ">
+    <div className="flex min-h-screen bg-gray-100  dark:bg-[rgba(38,64,22,1)] ">
      
       <div className="w-16 bg-green-700 ">
         <a href="/home">
@@ -15,7 +16,7 @@ export  function Detalhes() {
 
       
       <div className="flex-1">
-        {/* Header */}
+       
         <header className="flex flex-col w-full bg-white shadow dark:bg-[rgba(38,64,22,1)] ">
           <div className="flex items-center justify-between px-6 py-4">
             <div>
@@ -23,13 +24,9 @@ export  function Detalhes() {
               <p className="text-sm text-gray-500 ">Terça, 07 JUNHO 2025</p>
             </div>
 
+            
             <div className="flex items-center gap-4  ">
-              <input
-                type="text"
-                placeholder="Search"
-                className="w-64 px-4 py-2 text-sm rounded-full border border-gray-300 focus:outline-none focus:ring-2 focus:ring-green-500 dark:text-white"
-              />
-              
+            <Switch />
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 className="w-6 h-6 text-gray-600"

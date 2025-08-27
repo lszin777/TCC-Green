@@ -4,11 +4,12 @@ import joao from "../assets/joao.jpg";
 import lucas from "../assets/lucas.jpg";
 import maria from "../assets/maria.jpg";
 import anderson from "../assets/anderson.jpg";
+import { Switch } from "../components/Switch";
 
 export function SomosNos() {
   return (
     <section className="px-8 py-12 pt-20 dark:bg-[rgba(38,64,22,1)]">
-      {/* Título e descrição */}
+      
       <div className="flex justify-between items-start">
         <div>
           <h2 className="text-3xl font-bold mb-4 dark:text-white">QUEM SOMOS NÓS</h2>
@@ -19,8 +20,9 @@ export function SomosNos() {
           </p>
         </div>
 
-        {/* Botão Voltar */}
+        
         <div className="flex justify-center space-x-4 mt-12">
+          < Switch/>
           <button className="flex items-center justify-between bg-[rgb(217,217,217)] w-32 px-4 py-2 rounded-md  dark:bg-[rgba(84,140,49,1)]">
             <a href="/home" className="flex-1 text-left">
               <span className="text-black font-semibold dark:text-white">Voltar</span>
@@ -30,8 +32,8 @@ export function SomosNos() {
         </div>
       </div>
 
-      {/* Grid de cards */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6 px-7 mt-12">
+      
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6 px-7 mt-12 dark:bg-[rgba(38,64,22,1)]">
         <div className="bg-white rounded-2xl shadow overflow-hidden">
           <img
             src={vital}

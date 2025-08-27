@@ -3,6 +3,7 @@ import { React } from "react";
 import { Switch } from "./Switch";
 import Logo from "../assets/logo.svg";
 
+
 export function Header() {
   return (
     <header className="bg-[url(/background.png)] h-[13rem] bg-cover bg-center px-12 flex justify-between items-start pt-8">

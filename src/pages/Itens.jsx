@@ -23,23 +23,23 @@ export function Itens() {
         </h1>
       </div>
 
-      {/* Conteúdo */}
+      
       <main className="container mx-auto py-8">
-        {/* Cabeçalho da tabela */}
+        
         <div className="grid grid-cols-3 font-semibold text-lg mb-6 px-6 dark:text-white">
           <span>Itens cadastrados</span>
           <span className="text-center">Ordenar</span>
           <span className="text-right">Filtrar</span>
         </div>
 
-        {/* Lista de itens */}
+        
         <div className="space-y-4 ">
           {itens.map((item, i) => (
             <div
               key={i}
               className="bg-white shadow-md rounded-xl grid grid-cols-3 items-center px-6 py-4"
             >
-              {/* Coluna item */}
+              
               <div className="flex items-center gap-4">
                 <img
                   src={item.img}
@@ -49,12 +49,12 @@ export function Itens() {
                 <span className="text-lg">{item.nome}</span>
               </div>
 
-              {/* Coluna preço (alinhado com "Ordenar") */}
+              
               <div className="text-center font-bold text-lg">
                 {item.preco.toFixed(2)}
               </div>
 
-              {/* Coluna tipo (alinhado com "Filtrar") */}
+              
               <div className="text-right">
                 <span className="bg-green-600 text-white text-sm rounded-full px-4 py-1">
                   {item.tipo}
@@ -64,7 +64,7 @@ export function Itens() {
           ))}
         </div>
 
-        {/* Valor total (alinhado embaixo de Ordenar) */}
+       
         <div className="grid grid-cols-3 items-center mt-8 px-6 font-semibold text-lg dark:text-white">
           <div></div>
           <div className="text-center ">

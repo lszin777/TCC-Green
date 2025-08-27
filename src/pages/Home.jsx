@@ -15,7 +15,7 @@ export function Home() {
   return (
     <div>
       <div className="w-full min-h-screen">
-        {/* Header */}
+        
         <header
           className="w-full h-[100vh] bg-cover "
           style={{ backgroundImage: `url(${Homeimgheader})` }}
@@ -79,7 +79,7 @@ export function Home() {
           </div>
         </header> 
 
-        {/* Passo a Passo */}
+        
         <section className="py-16 px-6 md:px-20 bg-white dark:bg-[rgba(38,64,22,1)]">
           <h2 className="text-3xl md:text-4xl font-bold  dark:text-white">
             Green Guardian{" "}
@@ -129,7 +129,7 @@ export function Home() {
           </div>
         </section>
 
-        {/* Vídeos */}
+        
         <section className="py-16 px-6 md:px-20 bg-gray-100 text-center dark:bg-[rgba(50,64,41,1)]">
           <h2 className="text-3xl md:text-4xl font-bold dark:text-white">
             Video demonstrativo do{" "}
@@ -148,7 +148,7 @@ export function Home() {
           </div>
         </section>
 
-        {/* Insetos */}
+        
         <section className="py-16 px-6 md:px-20 bg-white text-center dark:bg-[rgba(38,64,22,1)]">
           <h2 className="text-3xl md:text-4xl font-bold  dark:text-white">
             Entre Asas e Antenas:{" "}
@@ -201,7 +201,7 @@ export function Home() {
           </div>
         </section>
 
-        {/* Call to action */}
+        
         <section className="py-16 px-6 md:px-20 bg-green-600 text-center text-white">
           <h2 className="text-3xl md:text-4xl font-bold">
             Cuide do Meio Ambiente, <br /> Cuide do Futuro
@@ -220,7 +220,7 @@ export function Home() {
           </div>
         </section>
 
-        {/* Footer */}
+        
         <footer className="bg-black text-white py-10 px-6 md:px-20 grid grid-cols-1 md:grid-cols-3 gap-6 text-center md:text-left">
           <div>
             <p className="font-bold">📞 Contato</p>
