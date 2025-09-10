@@ -15,13 +15,13 @@ export function Header() {
       <nav className=" text-white flex space-x-4 bg-white/20 backdrop-blur-md p-2 px-6 rounded-full border-2 ">
         <ul className="flex gap-20">
           <li>
-            <a href="/somosnos" className="font-semibold text-[19px] ">Somos nós</a>
+            <Link href="/somosnos" className="font-semibold text-[19px] ">Somos nós</Link>
           </li>
           <li>
-            <a href="/artigos" className="font-semibold text-[19px]">Artigos</a>
+            <Link href="/artigos" className="font-semibold text-[19px]">Artigos</Link>
           </li>
           <li>
-            <a href="/itens" className="font-semibold text-[19px]">Itens</a>
+            <Link href="/itens" className="font-semibold text-[19px]">Itens</Link>
           </li>
         </ul>
       </nav>

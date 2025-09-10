@@ -3,7 +3,7 @@ import { useNavigate } from "react-router";
 
 export function ErrorPage() {
   const navigate = useNavigate();
-  const [counter, setCounter] = useState(5); // começa em 5s
+  const [counter, setCounter] = useState(5); 
 
   useEffect(() => {
     const timer = setInterval(() => {
@@ -12,7 +12,7 @@ export function ErrorPage() {
 
     const redirect = setTimeout(() => {
       navigate("/home");
-    }, 5000); // redireciona em 5s
+    }, 5000); 
 
     return () => {
       clearInterval(timer);

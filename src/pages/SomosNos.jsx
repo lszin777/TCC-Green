@@ -8,8 +8,8 @@ import { Switch } from "../components/Switch";
 
 export function SomosNos() {
   return (
-    <section className="px-4 py-8 md:py-12 pt-12 dark:bg-[rgba(38,64,22,1)]">
-      {/* Header */}
+    <div className="">
+       <section className="px-4 py-8 md:py-12 pt-12 dark:bg-[rgba(38,64,22,1)] dark:h-screen">
       <div className="flex flex-col md:flex-row justify-between items-start gap-6">
         <div className="flex-1">
           <h2 className="text-2xl md:text-3xl font-bold mb-3 dark:text-white">
@@ -21,8 +21,6 @@ export function SomosNos() {
             trabalho de qualidade.
           </p>
         </div>
-
-        {/* Voltar */}
         <div className="flex items-center gap-3">
           <Switch />
           <button className="flex items-center bg-[rgb(217,217,217)] w-28 md:w-32 px-3 py-2 rounded-md dark:bg-[rgba(84,140,49,1)]">
@@ -35,8 +33,6 @@ export function SomosNos() {
           </button>
         </div>
       </div>
-
-      {/* Cards de integrantes */}
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 mt-6">
         {[
           { img: vital, name: "Marcos Vinicius" },
@@ -58,12 +54,13 @@ export function SomosNos() {
               <h3 className="font-bold">{p.name}</h3>
               <p className="text-green-700 font-semibold">CEO</p>
               <p className="text-sm text-gray-600 mt-2">
-                Breve descrição sobre {p.name}.
+                todods somos fullstack.
               </p>
             </div>
           </div>
         ))}
       </div>
     </section>
+    </div>
   );
 }

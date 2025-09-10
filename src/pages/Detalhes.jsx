@@ -6,7 +6,6 @@ import { Switch } from "../components/Switch";
 export function Detalhes() {
   return (
     <div className="min-h-screen flex flex-col md:flex-row bg-gray-100 dark:bg-[rgba(38,64,22,1)]">
-      {/* Sidebar para desktop */}
       <aside className="hidden md:flex md:flex-col w-16 bg-green-700 items-center py-4">
         <a href="/home">
           <img src={logo} alt="Logo" className="h-10" />
@@ -14,7 +13,6 @@ export function Detalhes() {
       </aside>
 
       <div className="flex-1">
-        {/* Header */}
         <header className="flex flex-col w-full bg-white shadow dark:bg-[rgba(38,64,22,1)]">
           <div className="flex items-center justify-between px-4 py-3 md:px-6 md:py-4">
             <div>
@@ -28,9 +26,7 @@ export function Detalhes() {
 
             <div className="flex items-center gap-3">
               <Switch />
-              {/* Botão menu mobile */}
               <button className="md:hidden p-2 rounded-md bg-gray-100">☰</button>
-              {/* Sino apenas em telas maiores */}
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 className="w-6 h-6 text-gray-600 hidden sm:block"
@@ -54,10 +50,9 @@ export function Detalhes() {
           </div>
         </header>
 
-        {/* Conteúdo */}
         <main className="p-4 md:p-6 dark:bg-[rgba(38,64,22,1)]">
           <div className="bg-white p-4 md:p-6 rounded-2xl shadow-md max-w-3xl mx-auto">
-            {/* Perfil */}
+
             <div className="flex items-center gap-4 mb-4 md:mb-6">
               <img
                 src={joao}
@@ -77,7 +72,6 @@ export function Detalhes() {
               </button>
             </div>
 
-            {/* Formulário */}
             <form className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               <div>
                 <label className="block text-sm font-medium">Nome Completo:</label>
@@ -134,7 +128,6 @@ export function Detalhes() {
               </div>
             </form>
 
-            {/* Email */}
             <div className="mt-4">
               <h3 className="font-medium">Meu endereço de email</h3>
               <div className="flex items-center gap-2 mt-2">

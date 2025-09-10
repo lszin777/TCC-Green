@@ -4,15 +4,11 @@ import game from "../assets/game.jpg";
 export function Jogo() {
   return (
     <div className="min-h-screen flex flex-col dark:bg-[rgba(38,64,22,1)]">
-      <main className="flex flex-col items-center bg-white rounded-t-2xl p-6 md:p-8 -mt-4">
-        {/* Título */}
+      <main className="flex flex-col items-center bg-white rounded-t-2xl p-6 md:p-8 -mt-4 dark:bg-[rgba(38,64,22,1)]">
         <h1 className="text-2xl md:text-3xl font-bold text-black mb-4 dark:text-white">
           Jogo
         </h1>
-
-        {/* Conteúdo */}
         <section className="w-full max-w-4xl grid grid-cols-1 md:grid-cols-2 gap-6">
-          {/* Imagem com botão play */}
           <div className="relative w-full">
             <img
               src={game}
@@ -26,7 +22,6 @@ export function Jogo() {
             </div>
           </div>
 
-          {/* Texto explicativo */}
           <div className="text-gray-700 flex flex-col justify-center">
             <h2 className="text-lg font-bold mb-2 dark:text-white">
               Como Jogar

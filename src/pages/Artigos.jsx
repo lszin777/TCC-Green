@@ -5,16 +5,13 @@ import foto4 from "../assets/img4.png";
 
 export function Artigos() {
   return (
-    <div className="dark:bg-[rgba(38,64,22,1)] p-4 h-screen">
-      {/* Título */}
+    <div className="dark:bg-[rgba(38,64,22,1)] p-4 h-[70vh] w-screen">
       <div className="flex justify-center pt-2">
         <h1 className="text-2xl md:text-3xl font-bold mb-4 dark:text-white">
           Artigos Relevantes
         </h1>
       </div>
-
-      {/* Cards */}
-      <main className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 items-start pt-6">
+      <main className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-4 items-start pt-20">
         <div className="flex flex-col items-center">
           <img
             src={foto1}

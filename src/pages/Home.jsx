@@ -12,20 +12,20 @@ import Logo from "../assets/logo.svg";
 export function Home() {
   return (
     <div className="min-h-screen">
-      {/* Hero Section */}
+      
       <header
         className="w-full h-screen bg-cover bg-center relative"
         style={{ backgroundImage: `url(${Homeimgheader})` }}
       >
         <div className="absolute inset-0 bg-black/50 z-0"></div>
 
-        {/* Navbar */}
+        
         <section className="relative z-10 px-4 md:px-12 flex items-start justify-between py-4">
           <a href="/home">
             <img src={Logo} alt="Logo" className="h-12 md:h-20" />
           </a>
 
-          {/* Menu Desktop */}
+          
           <nav className="hidden md:flex text-white items-center bg-white/20 backdrop-blur-md p-2 px-6 rounded-full border-2">
             <ul className="flex gap-6 md:gap-20">
               <li>
@@ -54,22 +54,20 @@ export function Home() {
               </li>
             </ul>
           </nav>
-
-          {/* Ações */}
           <div className="flex items-center gap-3">
             <Switch />
-            {/* Botão perfil Desktop */}
+            
             <button className="text-white px-4 py-2 rounded-full font-semibold shadow border-2 bg-transparent hidden md:inline-block">
               <a href="/detalhes">Perfil</a>
             </button>
-            {/* Botão perfil Mobile */}
+            
             <button className="md:hidden text-white px-3 py-2 rounded-full font-semibold shadow border-2 bg-transparent">
               <a href="/detalhes">Perfil</a>
             </button>
           </div>
         </section>
 
-        {/* Hero Content */}
+       
         <div className="relative z-10 text-center text-white flex flex-col items-center justify-center h-[60vh] md:h-screen px-4">
           <h2 className="text-green-600 text-3xl md:text-5xl font-bold">
             Bem-vindo
@@ -93,7 +91,7 @@ export function Home() {
         </div>
       </header>
 
-      {/* Passo a Passo */}
+      
       <section className="py-10 px-4 md:py-16 md:px-20 bg-white dark:bg-[rgba(38,64,22,1)]">
         <h2 className="text-2xl md:text-3xl font-bold dark:text-white">
           Green Guardian <span className="text-green-600">Passo a Passo</span>
@@ -122,7 +120,7 @@ export function Home() {
         </div>
       </section>
 
-      {/* Vídeos */}
+      
       <section className="py-10 px-4 md:py-16 md:px-20 bg-gray-100 text-center dark:bg-[rgba(50,64,41,1)]">
         <h2 className="text-2xl md:text-3xl font-bold dark:text-white">
           Video demonstrativo do <span className="text-green-600">Green Guardian</span>
@@ -152,7 +150,7 @@ export function Home() {
         </div>
       </section>
 
-      {/* Insetos */}
+    
       <section className="py-10 px-4 md:py-16 md:px-20 bg-white text-center dark:bg-[rgba(38,64,22,1)]">
         <h2 className="text-2xl md:text-3xl font-bold dark:text-white">
           Entre Asas e Antenas: <span className="text-green-600">Mundo dos Insetos</span>
@@ -200,7 +198,7 @@ export function Home() {
         </div>
       </section>
 
-      {/* Call to Action */}
+      
       <section className="py-8 px-4 md:py-12 md:px-20 bg-green-600 text-center text-white">
         <h2 className="text-xl md:text-3xl font-bold">
           Cuide do Meio Ambiente, <br /> Cuide do Futuro
@@ -218,7 +216,7 @@ export function Home() {
         </div>
       </section>
 
-      {/* Footer */}
+      
       <footer className="bg-black text-white py-8 px-4 md:px-20 grid grid-cols-1 md:grid-cols-3 gap-4 text-center md:text-left">
         <div>
           <p className="font-bold">📞 Contato</p>
