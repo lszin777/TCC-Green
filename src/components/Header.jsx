@@ -8,20 +8,20 @@ export function Header() {
   return (
     <header className="bg-[url(/background.png)] h-[13rem] bg-cover bg-center px-12 flex justify-between items-start pt-8">
 
-      <a href="/home">
+      <Link to="/home">
         <img src={Logo} alt="Logo" className="h-25 w-auto " />
-      </a>
+      </Link>
 
       <nav className=" text-white flex space-x-4 bg-white/20 backdrop-blur-md p-2 px-6 rounded-full border-2 ">
         <ul className="flex gap-20">
           <li>
-            <Link href="/somosnos" className="font-semibold text-[19px] ">Somos nós</Link>
+            <Link to="/somosnos" className="font-semibold text-[19px] ">Somos nós</Link>
           </li>
           <li>
-            <Link href="/artigos" className="font-semibold text-[19px]">Artigos</Link>
+            <Link to="/artigos" className="font-semibold text-[19px]">Artigos</Link>
           </li>
           <li>
-            <Link href="/itens" className="font-semibold text-[19px]">Itens</Link>
+            <Link to="/itens" className="font-semibold text-[19px]">Itens</Link>
           </li>
         </ul>
       </nav>
@@ -33,9 +33,9 @@ export function Header() {
 
         </div>
         <button className="text-white px-6 py-3 = rounded-full font-semibold shadow border-2 bg-transparent">
-          <a href="/detalhes">
+          <Link to="/detalhes">
             Perfil
-          </a>
+          </Link>
         </button>
       </div>
     </header>
