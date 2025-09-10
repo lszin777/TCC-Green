@@ -9,6 +9,9 @@ import Inseto3 from "../assets/mosca.png";
 import { Switch } from "../components/Switch";
 import Logo from "../assets/logo.svg";
 
+
+import { Link } from "react-router";
+
 export function Home() {
   return (
     <div className="min-h-screen">
@@ -21,36 +24,36 @@ export function Home() {
 
         
         <section className="relative z-10 px-4 md:px-12 flex items-start justify-between py-4">
-          <a href="/home">
+          <Link to="/home">
             <img src={Logo} alt="Logo" className="h-12 md:h-20" />
-          </a>
+          </Link>
 
           
           <nav className="hidden md:flex text-white items-center bg-white/20 backdrop-blur-md p-2 px-6 rounded-full border-2">
             <ul className="flex gap-6 md:gap-20">
               <li>
-                <a
-                  href="/somosnos"
+                <Link
+                  to="/somosnos"
                   className="font-semibold text-[16px] md:text-[19px]"
                 >
                   Somos nós
-                </a>
+                </Link>
               </li>
               <li>
-                <a
-                  href="/artigos"
+                <Link
+                  to="/artigos"
                   className="font-semibold text-[16px] md:text-[19px]"
                 >
                   Artigos
-                </a>
+                </Link>
               </li>
               <li>
-                <a
-                  href="/itens"
+                <Link
+                  to="/itens"
                   className="font-semibold text-[16px] md:text-[19px]"
                 >
                   Itens
-                </a>
+                </Link>
               </li>
             </ul>
           </nav>
@@ -58,11 +61,11 @@ export function Home() {
             <Switch />
             
             <button className="text-white px-4 py-2 rounded-full font-semibold shadow border-2 bg-transparent hidden md:inline-block">
-              <a href="/detalhes">Perfil</a>
+              <Link to="/detalhes">Perfil</Link>
             </button>
             
             <button className="md:hidden text-white px-3 py-2 rounded-full font-semibold shadow border-2 bg-transparent">
-              <a href="/detalhes">Perfil</a>
+              <Link to="/detalhes">Perfil</Link>
             </button>
           </div>
         </section>
@@ -85,7 +88,7 @@ export function Home() {
               Download
             </button>
             <button className="px-4 md:px-6 py-2 rounded-lg border border-white text-white font-semibold hover:bg-white hover:text-black transition">
-              <a href="/jogo">Jogo</a>
+              <Link to="/layout/jogo">Jogo</Link>
             </button>
           </div>
         </div>
