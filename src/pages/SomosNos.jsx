@@ -8,106 +8,61 @@ import { Switch } from "../components/Switch";
 
 export function SomosNos() {
   return (
-    <section className="px-8 py-12 pt-20 dark:bg-[rgba(38,64,22,1)]">
-      
-      <div className="flex justify-between items-start">
-        <div>
-          <h2 className="text-3xl font-bold mb-4 dark:text-white">QUEM SOMOS NÓS</h2>
-          <p className="text-gray-700 max-w-2xl mb-8 pt-7 dark:text-white">
+    <section className="px-4 py-8 md:py-12 pt-12 dark:bg-[rgba(38,64,22,1)]">
+      {/* Header */}
+      <div className="flex flex-col md:flex-row justify-between items-start gap-6">
+        <div className="flex-1">
+          <h2 className="text-2xl md:text-3xl font-bold mb-3 dark:text-white">
+            QUEM SOMOS NÓS
+          </h2>
+          <p className="text-gray-700 max-w-xl mb-4 dark:text-white">
             Somos um grupo comprometido e apaixonado pelo tema do nosso TCC.
             Unimos diferentes habilidades e conhecimentos para desenvolver um
             trabalho de qualidade.
           </p>
         </div>
 
-        
-        <div className="flex justify-center space-x-4 mt-12">
-          < Switch/>
-          <button className="flex items-center justify-between bg-[rgb(217,217,217)] w-32 px-4 py-2 rounded-md  dark:bg-[rgba(84,140,49,1)]">
+        {/* Voltar */}
+        <div className="flex items-center gap-3">
+          <Switch />
+          <button className="flex items-center bg-[rgb(217,217,217)] w-28 md:w-32 px-3 py-2 rounded-md dark:bg-[rgba(84,140,49,1)]">
             <a href="/home" className="flex-1 text-left">
-              <span className="text-black font-semibold dark:text-white">Voltar</span>
+              <span className="text-black font-semibold dark:text-white">
+                Voltar
+              </span>
             </a>
             <span className="text-black font-semibold dark:text-white">→</span>
           </button>
         </div>
       </div>
 
-      
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6 px-7 mt-12 dark:bg-[rgba(38,64,22,1)]">
-        <div className="bg-white rounded-2xl shadow overflow-hidden">
-          <img
-            src={vital}
-            alt="Marcos Vinicius"
-            className="w-full h-64 object-cover"
-          />
-          <div className="p-4">
-            <h3 className="font-bold">Marcos Vinicius</h3>
-            <p className="text-green-700 font-semibold">CEO</p>
-            <p className="text-sm text-gray-600 mt-2">
-              O aprendizado nos transforma.
-            </p>
+      {/* Cards de integrantes */}
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 mt-6">
+        {[
+          { img: vital, name: "Marcos Vinicius" },
+          { img: anderson, name: "Anderson Luiz" },
+          { img: joao, name: "João Aguiar" },
+          { img: lucas, name: "Lucas Lima" },
+          { img: maria, name: "Maria Ferreira" },
+        ].map((p, i) => (
+          <div
+            key={i}
+            className="bg-white rounded-2xl shadow overflow-hidden flex flex-col"
+          >
+            <img
+              src={p.img}
+              alt={p.name}
+              className="w-full h-48 md:h-64 object-cover"
+            />
+            <div className="p-3 flex-1 flex flex-col">
+              <h3 className="font-bold">{p.name}</h3>
+              <p className="text-green-700 font-semibold">CEO</p>
+              <p className="text-sm text-gray-600 mt-2">
+                Breve descrição sobre {p.name}.
+              </p>
+            </div>
           </div>
-        </div>
-
-        <div className="bg-white rounded-2xl shadow overflow-hidden">
-          <img
-            src={anderson}
-            alt="Anderson Luiz"
-            className="w-full h-64 object-cover"
-          />
-          <div className="p-4">
-            <h3 className="font-bold">Anderson Luiz</h3>
-            <p className="text-green-700 font-semibold">CEO</p>
-            <p className="text-sm text-gray-600 mt-2">
-              Quem tem propósito suporta o processo.
-            </p>
-          </div>
-        </div>
-
-        <div className="bg-white rounded-2xl shadow overflow-hidden">
-          <img
-            src={joao}
-            alt="João Aguiar"
-            className="w-full h-64 object-cover"
-          />
-          <div className="p-4">
-            <h3 className="font-bold">João Aguiar</h3>
-            <p className="text-green-700 font-semibold">CEO</p>
-            <p className="text-sm text-gray-600 mt-2">
-              Experiência como desenvolvedor full-stack com foco em React, MySQL e C++.
-            </p>
-          </div>
-        </div>
-
-        <div className="bg-white rounded-2xl shadow overflow-hidden">
-          <img
-            src={lucas}
-            alt="Lucas Lima"
-            className="w-full h-64 object-cover"
-          />
-          <div className="p-4">
-            <h3 className="font-bold">Lucas Lima</h3>
-            <p className="text-green-700 font-semibold">CEO</p>
-            <p className="text-sm text-gray-600 mt-2">
-              Jesus is the way, the truth, and the life.
-            </p>
-          </div>
-        </div>
-
-        <div className="bg-white rounded-2xl shadow overflow-hidden">
-          <img
-            src={maria}
-            alt="Maria Ferreira"
-            className="w-full h-64 object-cover"
-          />
-          <div className="p-4">
-            <h3 className="font-bold">Maria Ferreira</h3>
-            <p className="text-green-700 font-semibold">CEO</p>
-            <p className="text-sm text-gray-600 mt-2">
-              A coragem não é a ausência do medo, mas sim o passo dado através dele.
-            </p>
-          </div>
-        </div>
+        ))}
       </div>
     </section>
   );
